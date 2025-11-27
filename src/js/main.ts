@@ -288,7 +288,9 @@ const init = () => {
   }
 
   createIcons({ icons });
-  console.log('Please share our tool and share the love!');
+  if (!__SIMPLE_MODE__) {
+    console.log('Please share our tool and share the love!');
+  }
 
 
   const githubStarsElement = document.getElementById('github-stars');
